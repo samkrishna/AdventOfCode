@@ -40,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F7D55B521D5826300E30EAD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		6FD534A021D48D980021EA08 /* applelang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = applelang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD534A321D48D980021EA08 /* applelang.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = applelang.h; sourceTree = "<group>"; };
 		6FD534A421D48D980021EA08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -96,6 +97,7 @@
 		6FD5349621D48D970021EA08 = {
 			isa = PBXGroup;
 			children = (
+				6F7D55B521D5826300E30EAD /* README.md */,
 				6FD534BE21D48EE00021EA08 /* inputs */,
 				6FD534A221D48D980021EA08 /* applelang */,
 				6FD534AD21D48D980021EA08 /* applelangTests */,
