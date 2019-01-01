@@ -49,7 +49,7 @@ And you should be good to go.
 
 Here are some developers I respect that have implemented solution sets for AoC:
 
-- [Python — Michael Fogelman](https://www.michaelfogleman.com/aoc18/): [GitHub](https://github.com/fogleman/AdventOfCode2018)
+- [Python — Michael Fogelman](https://github.com/fogleman/AdventOfCode2018) ([2018 AoC Homepage](https://www.michaelfogleman.com/aoc18/))
 - [Racket — Matthew Butterick](https://github.com/mbutterick/aoc-racket)
 - [Swift — Dave DeLong](https://github.com/davedelong/AOC)
 
