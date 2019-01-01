@@ -20,12 +20,20 @@ Currently, the repo for a given year is organized as follows:
 
 Right now, only 2018 has any entries filled out.
 
-## Motivation
+### Python 3
 
-I needed to do *something* to keep pushing my edge in software development. But I didn't want to go out and make up a bunch of exercises that I didn't care about or were artificially simplistic.
+I'm using Python 3.7.0 with [pyenv](https://github.com/pyenv/pyenv) and [pipenv](https://pipenv.readthedocs.io/en/latest/) for dependency management. In case you've never encountered this configuration before, I recommend the following link: [Why you should use pyenv + Pipenv for your Python projects](https://hackernoon.com/reaching-python-development-nirvana-bb5692adf30c)
 
-I also need to get WAY BETTER at Python, Racket and Swift (I already develop in Objective-C). I'm using Objective-C as a baseline strategy to help me "navigate the solution" and then use the language idiosyncrasies for the other languages to bootstrap their solutions.
+I've also configured [WingIDE Pro](https://wingware.com/downloads/wing-pro) (currently v. 6.1.2) to use the pipenv shell environment. If you want to use WingIDE with the Pipenv environment, you'll need to get the pipenv path information **AFTER** you get pipenv working. You can do this by running the following command:
 
-## Goals
+```
+$ pipenv --venv | pbcopy
+```
 
-The goal is to work through all 4 years in all 4 languages before the 2019 AoC project rolls around. After that front-line work is complete, hopefully I'll be working on the 2019 AoC problems as well.
+which you then paste into the WingIDE Project properties, with the following addendum:
+
+```
+<Pipenv shell path prefix>/AdventOfCode-AdSqjYm2/bin/python3
+```
+
+And you should be good to go.
