@@ -4,10 +4,7 @@
 # Wing IDE project file : User-specific branch                   #
 ##################################################################
 [user attributes]
-debug.breakpoints = {loc('day01.py'): {11L: (0,
-        None,
-        1,
-        0)}}
+debug.err-values = {loc('day01.py'): {}}
 debug.recent-run-args = {loc('day01.py'): [u'../inputs/day01.txt']}
 debug.show-args-dialog = {loc('day01.py'): False}
 guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
@@ -135,7 +132,7 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                                {})],
                  'primary_view_state': {'area': 'wide',
         'constraint': None,
-        'current_pages': [0,
+        'current_pages': [2,
                           0],
         'notebook_display': 'normal',
         'notebook_percent': 0.30000000000000004,
@@ -155,7 +152,7 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                                        'fRegexFlags': 42,
                                        'fReplaceText': u'',
                                        'fReverse': True,
-                                       'fSearchText': u'input',
+                                       'fSearchText': u'',
                                        'fStartPos': 0,
                                        'fStyle': 'text',
                                        'fWholeWords': False,
@@ -566,14 +563,13 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
         20),
         'current-loc': loc('day01.py'),
         'editor-state-list': [(loc('day01.py'),
-                               {'attrib-starts': [('part2',
-        7)],
+                               {'attrib-starts': [],
                                 'first-line': 0L,
                                 'folded-linenos': [],
-                                'sel-line': 10L,
-                                'sel-line-start': 135L,
-                                'selection_end': 150L,
-                                'selection_start': 150L,
+                                'sel-line': 18L,
+                                'sel-line-start': 296L,
+                                'selection_end': 310L,
+                                'selection_start': 310L,
                                 'zoom': 0L}),
                               (loc('../../../../../../Applications/WingIDE.app/Contents/Resources/resources/doc/en/TOC.idx'),
                                {'displayed-index': 291,
@@ -617,7 +613,7 @@ proj.build-cmd = {None: ('default',
 proj.env-vars = {None: ('default',
                         [u''])}
 proj.pyexec = {None: ('custom',
-                      u'/Users/achilles/.local/share/virtualenvs/Python-wVTbcOd6/bin/python3')}
+                      u'/Users/achilles/.local/share/virtualenvs/AdventOfCode-AdSqjYm2/bin/python3')}
 proj.vcs-system-config = ('prefs',
                           {'bzr': {'versioncontrol.bzr.active': 'active-if-p'\
         'roject-dir',
