@@ -1,5 +1,9 @@
+# From https://github.com/fogleman/AdventOfCode2018/blob/master/1.py
+
 import fileinput
 
+# Creates a list of lines from stdin using fileinput.input().
+# THe list is Iterable
 lines = list(fileinput.input())
 
 def part1():
