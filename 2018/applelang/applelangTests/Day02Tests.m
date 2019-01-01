@@ -60,7 +60,7 @@
     }
 
     NSUInteger result = countOf3 * countOf2;
-    NSLog(@"result = %lu", result);
+    XCTAssertTrue(result == 8296);
 }
 
 - (void)testDay02Part2FINAL
@@ -152,8 +152,12 @@
         }
     }
 
+    NSString *s1;
+    NSString *s2;
+
     for (NSString *value in multipleValueCountArray) {
         NSArray *keys = [countingDictM allKeysForObject:value];
+        NSUInteger deltaCount = 0;
 
         for (NSString *key in keys) {
             NSMutableArray *keysM = [keys mutableCopy];
@@ -161,16 +165,28 @@
             NSArray *editedKeys = [keysM copy];
 
             for (NSUInteger i = 0; i < editedKeys.count; i++) {
-                NSUInteger deltaCount = ndiff(key, editedKeys[i]);
+                deltaCount = ndiff(key, editedKeys[i]);
 
                 if (deltaCount == 1) {
                     NSLog(@"We have a single delta b/t the following strings:");
-                    NSLog(@"%@%@", key, value);
-                    NSLog(@"%@%@", editedKeys[i], value);
+                    s1 = [NSString stringWithFormat:@"%@%@", key, value];
+                    s2 = [NSString stringWithFormat:@"%@%@", editedKeys[i], value];
+                    break;
                 }
             }
+
+            if (deltaCount == 1) {
+                break;
+            }
+        }
+
+        if (deltaCount == 1) {
+            break;
         }
     }
+
+    XCTAssertTrue([s1 isEqualToString:@"pazvmqbfjtrbeosiecxlghkwud"]);
+    XCTAssertTrue([s2 isEqualToString:@"pazvmqbfotrbeosiecxlghkwud"]);
 }
 
 @end

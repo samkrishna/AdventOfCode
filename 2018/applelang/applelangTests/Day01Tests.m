@@ -34,7 +34,7 @@
         sum += line.integerValue;
     }];
 
-    NSLog(@"sum = %ld", sum);
+    XCTAssertTrue(sum == 547);
 }
 
 - (void)testDay01Part2
@@ -71,7 +71,7 @@
         }
     } while (keepCounting);
 
-    NSLog(@"The first doubled frequency is %@", freqNumber);
+    XCTAssertTrue(freqNumber.unsignedIntegerValue == 76414);
 }
 
 @end
