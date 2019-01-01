@@ -44,3 +44,13 @@ And add this to the Python Path (after you switch to "Custom"):
 ```
 
 And you should be good to go.
+
+## Already-Existing Solution Sets
+
+Here are some developers I respect that have implemented solution sets for AoC:
+
+- [Python — Michael Fogelman](https://www.michaelfogleman.com/aoc18/): [GitHub](https://github.com/fogleman/AdventOfCode2018)
+- [Racket — Matthew Butterick](https://github.com/mbutterick/aoc-racket)
+- [Swift — Dave DeLong](https://github.com/davedelong/AOC)
+
+And for the curious, here's [a curated list of AoC solution repos](https://github.com/Bogdanp/awesome-advent-of-code#swift) for a multitude of languages.
