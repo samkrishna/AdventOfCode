@@ -9,19 +9,28 @@
 #import <XCTest/XCTest.h>
 
 @interface Day01Tests : XCTestCase
-
+@property (nonatomic, readonly, strong) NSString *inputString;
 @end
 
 @implementation Day01Tests
 
+- (NSString *)inputString
+{
+    static dispatch_once_t onceToken;
+    static NSString *_inputString;
+    dispatch_once(&onceToken, ^{
+        NSString *inputFileName = @"day01";
+        NSString *path = [[NSBundle bundleForClass:[self class]] pathForResource:inputFileName ofType:@"txt"];
+        _inputString = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:NULL];
+    });
+
+    return _inputString;
+}
+
 - (void)testDay01Part1
 {
-    NSString *inputFileName = @"day01";
-    NSString *path = [[NSBundle bundleForClass:[self class]] pathForResource:inputFileName ofType:@"txt"];
-    NSString *inputString = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:NULL];
     __block NSInteger sum = 0;
-
-    [inputString enumerateLinesUsingBlock:^(NSString * _Nonnull line, BOOL * _Nonnull stop) {
+    [self.inputString enumerateLinesUsingBlock:^(NSString * _Nonnull line, BOOL * _Nonnull stop) {
         sum += line.integerValue;
     }];
 
@@ -30,16 +39,13 @@
 
 - (void)testDay01Part2
 {
-    NSString *inputFileName = @"day01";
-    NSString *path = [[NSBundle bundleForClass:[self class]] pathForResource:inputFileName ofType:@"txt"];
-    NSString *inputString = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:NULL];
     NSMutableArray *deltasM = [NSMutableArray array];
     __block NSInteger frequency = 0;
     NSCountedSet *frequencySet = [NSCountedSet set];
     __block BOOL keepCounting = YES;
     __block NSNumber *freqNumber = nil;
 
-    [inputString enumerateLinesUsingBlock:^(NSString * _Nonnull line, BOOL * _Nonnull stop) {
+    [self.inputString enumerateLinesUsingBlock:^(NSString * _Nonnull line, BOOL * _Nonnull stop) {
         [deltasM addObject:@(line.integerValue)];
     }];
 

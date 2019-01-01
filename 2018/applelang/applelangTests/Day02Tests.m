@@ -10,18 +10,28 @@
 #import <XCTest/XCTest.h>
 
 @interface Day02Tests : XCTestCase
-
+@property (nonatomic, readonly, strong) NSString *puzzleInput;
 @end
 
 @implementation Day02Tests
 
+- (NSString *)puzzleInput
+{
+    static dispatch_once_t onceToken;
+    static NSString *_input;
+    dispatch_once(&onceToken, ^{
+        NSString *filePath = [[NSBundle bundleForClass:[self class]] pathForResource:@"day02" ofType:@"txt"];
+        _input = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:NULL];
+    });
+
+    return _input;
+}
+
 - (void)testDay02Part1
 {
-    NSString *filePath = [[NSBundle bundleForClass:[self class]] pathForResource:@"day02" ofType:@"txt"];
-    NSString *puzzleInput = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:NULL];
     NSMutableDictionary *countingDictM = [NSMutableDictionary dictionary];
 
-    [puzzleInput enumerateLinesUsingBlock:^(NSString * _Nonnull line, BOOL * _Nonnull stop) {
+    [self.puzzleInput enumerateLinesUsingBlock:^(NSString * _Nonnull line, BOOL * _Nonnull stop) {
         NSArray *chars = [line substringsMatchedByRegex:@"\\w"];
         NSCountedSet *charSet = [NSCountedSet setWithArray:chars];
         countingDictM[line] = charSet;
@@ -55,8 +65,6 @@
 
 - (void)testDay02Part2FINAL
 {
-    NSString *filePath = [[NSBundle bundleForClass:[self class]] pathForResource:@"day02" ofType:@"txt"];
-    NSString *puzzleInput = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:NULL];
     NSMutableDictionary *countingDictM = [NSMutableDictionary dictionary];
     NSMutableArray<NSDictionary *> *candidates = [NSMutableArray array];
     NSCountedSet *keySet = [NSCountedSet set];
@@ -78,7 +86,7 @@
         return ndiff;
     };
 
-    [puzzleInput enumerateLinesUsingBlock:^(NSString * _Nonnull line, BOOL * _Nonnull stop) {
+    [self.puzzleInput enumerateLinesUsingBlock:^(NSString * _Nonnull line, BOOL * _Nonnull stop) {
         NSUInteger halfLength = line.length / 2;
         NSArray *halves = [line substringsMatchedByRegex:[NSString stringWithFormat:@"(\\w{%lu})", halfLength]];
         NSString *half1 = halves[0];
