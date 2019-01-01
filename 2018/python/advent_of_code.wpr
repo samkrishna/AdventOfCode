@@ -23,4 +23,7 @@ debug.launch-configs = (2,
 proj.file-type = 'shared'
 proj.launch-config = {loc('day01.py'): ('project',
         (u'../inputs/day01.txt',
+         '')),
+                      loc('../python3/day01.py'): ('project',
+        (u'../inputs/day01.txt',
          ''))}
