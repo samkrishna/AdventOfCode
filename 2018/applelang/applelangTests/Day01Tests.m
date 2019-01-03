@@ -9,29 +9,33 @@
 #import <XCTest/XCTest.h>
 
 @interface Day01Tests : XCTestCase
-@property (nonatomic, readonly, strong) NSString *inputString;
+@property (nonatomic, readonly, strong) NSArray<NSNumber *> *numbers;
 @end
 
 @implementation Day01Tests
 
-- (NSString *)inputString
+- (NSArray<NSNumber *> *)numbers
 {
+    static NSMutableArray *arrayM;
     static dispatch_once_t onceToken;
-    static NSString *_inputString;
     dispatch_once(&onceToken, ^{
-        NSString *inputFileName = @"day01";
-        NSString *path = [[NSBundle bundleForClass:[self class]] pathForResource:inputFileName ofType:@"txt"];
-        _inputString = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:NULL];
+        NSString *path = [[NSBundle bundleForClass:[self class]] pathForResource:@"day01" ofType:@"txt"];
+        NSString *inputString = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:NULL];
+        arrayM = [NSMutableArray array];
+
+        [inputString enumerateLinesUsingBlock:^(NSString * _Nonnull line, BOOL * _Nonnull stop) {
+            [arrayM addObject:@(line.integerValue)];
+        }];
     });
 
-    return _inputString;
+    return [arrayM copy];
 }
 
 - (void)testDay01Part1
 {
     __block NSInteger sum = 0;
-    [self.inputString enumerateLinesUsingBlock:^(NSString * _Nonnull line, BOOL * _Nonnull stop) {
-        sum += line.integerValue;
+    [self.numbers enumerateObjectsUsingBlock:^(NSNumber * _Nonnull num, NSUInteger idx, BOOL * _Nonnull stop) {
+        sum += num.integerValue;
     }];
 
     XCTAssertTrue(sum == 547);
@@ -39,37 +43,24 @@
 
 - (void)testDay01Part2
 {
-    NSMutableArray *deltasM = [NSMutableArray array];
     __block NSInteger frequency = 0;
-    NSCountedSet *frequencySet = [NSCountedSet set];
-    __block BOOL keepCounting = YES;
     __block NSNumber *freqNumber = nil;
-
-    [self.inputString enumerateLinesUsingBlock:^(NSString * _Nonnull line, BOOL * _Nonnull stop) {
-        [deltasM addObject:@(line.integerValue)];
-    }];
-
-    NSArray *deltas = [deltasM copy];
+    NSCountedSet *frequencySet = [NSCountedSet set];
 
     do {
-        [deltas enumerateObjectsUsingBlock:^(NSNumber * _Nonnull delta, NSUInteger idx, BOOL * _Nonnull stop) {
+        [self.numbers enumerateObjectsUsingBlock:^(NSNumber * _Nonnull delta, NSUInteger idx, BOOL * _Nonnull stop) {
             frequency += delta.integerValue;
             NSNumber *freq = @(frequency);
 
             if ([frequencySet countForObject:freq] > 0) {
                 freqNumber = freq;
-                keepCounting = NO;
                 *stop = YES;
             }
             else {
-                [frequencySet addObject:@(frequency)];
+                [frequencySet addObject:freq];
             }
         }];
-
-        if (!keepCounting) {
-            break;
-        }
-    } while (keepCounting);
+    } while (!freqNumber);
 
     XCTAssertTrue(freqNumber.unsignedIntegerValue == 76414);
 }
