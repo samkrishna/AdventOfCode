@@ -45,14 +45,14 @@
 {
     __block NSInteger frequency = 0;
     __block NSNumber *freqNumber = nil;
-    NSCountedSet *frequencySet = [NSCountedSet set];
+    NSMutableSet *frequencySet = [NSMutableSet set];
 
     do {
         [self.numbers enumerateObjectsUsingBlock:^(NSNumber * _Nonnull delta, NSUInteger idx, BOOL * _Nonnull stop) {
             frequency += delta.integerValue;
             NSNumber *freq = @(frequency);
 
-            if ([frequencySet countForObject:freq] > 0) {
+            if ([frequencySet containsObject:freq]) {
                 freqNumber = freq;
                 *stop = YES;
             }
