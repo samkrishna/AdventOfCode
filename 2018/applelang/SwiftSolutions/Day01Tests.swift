@@ -11,7 +11,9 @@ import XCTest
 class Day01Tests: XCTestCase {
 
     var numbers: [Int] {
-        return type(of: self).input.components(separatedBy: "\n").map({ Int($0) ?? 0})
+        var _numbers = type(of: self).input.components(separatedBy: "\n").map({ Int($0) ?? 0})
+        _numbers.removeLast()
+        return _numbers
     }
 
     static var input: String = {
