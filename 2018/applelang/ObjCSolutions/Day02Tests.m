@@ -6,7 +6,7 @@
 //  Copyright © 2018 SectorMobile. All rights reserved.
 //
 
-@import applelang;
+@import AOCObjC;
 #import <XCTest/XCTest.h>
 
 @interface Day02Tests : XCTestCase
