@@ -30,5 +30,24 @@ class Day01Tests: XCTestCase {
         XCTAssertTrue(numberSum == 547)
     }
 
-    
+    func testDay01Part2() {
+        var frequency = 0;
+        var frequencySet: Set<Int> = Set()
+        var pleaseContinue = true
+
+        repeat {
+            for delta in numbers {
+                frequency += delta
+
+                if frequencySet.contains(frequency) {
+                    pleaseContinue = false
+                    break
+                }
+
+                frequencySet.insert(frequency)
+            }
+        } while pleaseContinue
+
+        XCTAssertTrue(frequency == 76414)
+    }
 }
