@@ -33,20 +33,20 @@ class Day01: XCTestCase {
     func testDay01PartB() {
         var frequency = 0;
         var frequencySet: Set<Int> = Set()
-        var pleaseContinue = true
+        var shouldContinue = true
 
         repeat {
             for delta in numbers {
                 frequency += delta
 
                 if frequencySet.contains(frequency) {
-                    pleaseContinue = false
+                    shouldContinue = false
                     break
                 }
 
                 frequencySet.insert(frequency)
             }
-        } while pleaseContinue
+        } while shouldContinue
 
         XCTAssertTrue(frequency == 76414)
     }
