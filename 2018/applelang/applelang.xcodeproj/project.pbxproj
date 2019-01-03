@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F155F6621DE751D00A7741B /* Day02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F155F6121DE690800A7741B /* Day02.swift */; };
 		6F155F6821DE8E6D00A7741B /* RegexKitX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F155F6721DE8E6C00A7741B /* RegexKitX.swift */; };
 		6FD534AA21D48D980021EA08 /* AOCObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD534A021D48D980021EA08 /* AOCObjC.framework */; };
 		6FD534B121D48D980021EA08 /* AOCObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD534A321D48D980021EA08 /* AOCObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F155F6121DE690800A7741B /* Day02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day02.swift; sourceTree = "<group>"; };
 		6F155F6721DE8E6C00A7741B /* RegexKitX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexKitX.swift; sourceTree = "<group>"; };
 		6F7D55B521D5826300E30EAD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		6FD534A021D48D980021EA08 /* AOCObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AOCObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				6FD534EB21D4AA7A0021EA08 /* Day01.swift */,
+				6F155F6121DE690800A7741B /* Day02.swift */,
 				6FD534E321D4AA560021EA08 /* Info.plist */,
 			);
 			path = SwiftSolutions;
@@ -375,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F155F6621DE751D00A7741B /* Day02.swift in Sources */,
 				6FD534EC21D4AA7A0021EA08 /* Day01.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
