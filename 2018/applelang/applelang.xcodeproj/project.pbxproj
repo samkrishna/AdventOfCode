@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F155F6821DE8E6D00A7741B /* RegexKitX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F155F6721DE8E6C00A7741B /* RegexKitX.swift */; };
 		6FD534AA21D48D980021EA08 /* AOCObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD534A021D48D980021EA08 /* AOCObjC.framework */; };
 		6FD534B121D48D980021EA08 /* AOCObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD534A321D48D980021EA08 /* AOCObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FD534BC21D48DFA0021EA08 /* RegexKitX.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD534BA21D48DFA0021EA08 /* RegexKitX.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F155F6721DE8E6C00A7741B /* RegexKitX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexKitX.swift; sourceTree = "<group>"; };
 		6F7D55B521D5826300E30EAD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		6FD534A021D48D980021EA08 /* AOCObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AOCObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD534A321D48D980021EA08 /* AOCObjC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOCObjC.h; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				6FD534D621D4AA560021EA08 /* AOCSwift.h */,
+				6F155F6721DE8E6C00A7741B /* RegexKitX.swift */,
 				6FD534D721D4AA560021EA08 /* Info.plist */,
 			);
 			path = SwiftSupplement;
@@ -280,6 +283,7 @@
 					};
 					6FD534D321D4AA560021EA08 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					6FD534DB21D4AA560021EA08 = {
 						CreatedOnToolsVersion = 10.1;
@@ -363,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F155F6821DE8E6D00A7741B /* RegexKitX.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,6 +595,7 @@
 		6FD534E621D4AA560021EA08 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -617,6 +623,7 @@
 		6FD534E721D4AA560021EA08 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -644,6 +651,7 @@
 		6FD534E921D4AA560021EA08 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = SwiftSolutions/Info.plist;
@@ -663,6 +671,7 @@
 		6FD534EA21D4AA560021EA08 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = SwiftSolutions/Info.plist;
