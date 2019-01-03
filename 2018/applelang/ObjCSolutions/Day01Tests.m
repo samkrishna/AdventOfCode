@@ -48,18 +48,17 @@
     NSMutableSet *frequencySet = [NSMutableSet set];
 
     do {
-        [self.numbers enumerateObjectsUsingBlock:^(NSNumber * _Nonnull delta, NSUInteger idx, BOOL * _Nonnull stop) {
+        for (NSNumber *delta in self.numbers) {
             frequency += delta.integerValue;
             NSNumber *freq = @(frequency);
 
             if ([frequencySet containsObject:freq]) {
                 freqNumber = freq;
-                *stop = YES;
+                break;
             }
-            else {
-                [frequencySet addObject:freq];
-            }
-        }];
+
+            [frequencySet addObject:freq];
+        }
     } while (!freqNumber);
 
     XCTAssertTrue(freqNumber.unsignedIntegerValue == 76414);
