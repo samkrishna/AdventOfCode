@@ -11,13 +11,13 @@
 		6FD534B121D48D980021EA08 /* AOCObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD534A321D48D980021EA08 /* AOCObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FD534BC21D48DFA0021EA08 /* RegexKitX.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD534BA21D48DFA0021EA08 /* RegexKitX.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FD534BD21D48DFA0021EA08 /* RegexKitX.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD534BB21D48DFA0021EA08 /* RegexKitX.m */; };
-		6FD534C421D48F3A0021EA08 /* Day01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD534C321D48F3A0021EA08 /* Day01Tests.m */; };
-		6FD534C621D490180021EA08 /* Day02Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD534C521D490180021EA08 /* Day02Tests.m */; };
+		6FD534C421D48F3A0021EA08 /* Day01.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD534C321D48F3A0021EA08 /* Day01.m */; };
+		6FD534C621D490180021EA08 /* Day02.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD534C521D490180021EA08 /* Day02.m */; };
 		6FD534CD21D493280021EA08 /* day01.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6FD534CB21D493280021EA08 /* day01.txt */; };
 		6FD534CE21D493280021EA08 /* day02.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6FD534CC21D493280021EA08 /* day02.txt */; };
 		6FD534DD21D4AA560021EA08 /* AOCSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD534D421D4AA560021EA08 /* AOCSwift.framework */; };
 		6FD534E421D4AA560021EA08 /* AOCSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD534D621D4AA560021EA08 /* AOCSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6FD534EC21D4AA7A0021EA08 /* Day01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD534EB21D4AA7A0021EA08 /* Day01Tests.swift */; };
+		6FD534EC21D4AA7A0021EA08 /* Day01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD534EB21D4AA7A0021EA08 /* Day01.swift */; };
 		6FD534ED21D4AB3F0021EA08 /* day01.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6FD534CB21D493280021EA08 /* day01.txt */; };
 		6FD534EE21D4AB430021EA08 /* day02.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6FD534CC21D493280021EA08 /* day02.txt */; };
 /* End PBXBuildFile section */
@@ -48,8 +48,8 @@
 		6FD534B021D48D980021EA08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FD534BA21D48DFA0021EA08 /* RegexKitX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitX.h; sourceTree = "<group>"; };
 		6FD534BB21D48DFA0021EA08 /* RegexKitX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitX.m; sourceTree = "<group>"; };
-		6FD534C321D48F3A0021EA08 /* Day01Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Day01Tests.m; sourceTree = "<group>"; };
-		6FD534C521D490180021EA08 /* Day02Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Day02Tests.m; sourceTree = "<group>"; };
+		6FD534C321D48F3A0021EA08 /* Day01.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Day01.m; sourceTree = "<group>"; };
+		6FD534C521D490180021EA08 /* Day02.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Day02.m; sourceTree = "<group>"; };
 		6FD534CB21D493280021EA08 /* day01.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = day01.txt; sourceTree = "<group>"; };
 		6FD534CC21D493280021EA08 /* day02.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = day02.txt; sourceTree = "<group>"; };
 		6FD534D421D4AA560021EA08 /* AOCSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AOCSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,7 +57,7 @@
 		6FD534D721D4AA560021EA08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FD534DC21D4AA560021EA08 /* AOCSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AOCSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD534E321D4AA560021EA08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6FD534EB21D4AA7A0021EA08 /* Day01Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day01Tests.swift; sourceTree = "<group>"; };
+		6FD534EB21D4AA7A0021EA08 /* Day01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day01.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,8 +132,8 @@
 		6FD534AD21D48D980021EA08 /* ObjCSolutions */ = {
 			isa = PBXGroup;
 			children = (
-				6FD534C321D48F3A0021EA08 /* Day01Tests.m */,
-				6FD534C521D490180021EA08 /* Day02Tests.m */,
+				6FD534C321D48F3A0021EA08 /* Day01.m */,
+				6FD534C521D490180021EA08 /* Day02.m */,
 				6FD534B021D48D980021EA08 /* Info.plist */,
 			);
 			path = ObjCSolutions;
@@ -161,7 +161,7 @@
 		6FD534E021D4AA560021EA08 /* SwiftSolutions */ = {
 			isa = PBXGroup;
 			children = (
-				6FD534EB21D4AA7A0021EA08 /* Day01Tests.swift */,
+				6FD534EB21D4AA7A0021EA08 /* Day01.swift */,
 				6FD534E321D4AA560021EA08 /* Info.plist */,
 			);
 			path = SwiftSolutions;
@@ -354,8 +354,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FD534C621D490180021EA08 /* Day02Tests.m in Sources */,
-				6FD534C421D48F3A0021EA08 /* Day01Tests.m in Sources */,
+				6FD534C621D490180021EA08 /* Day02.m in Sources */,
+				6FD534C421D48F3A0021EA08 /* Day01.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FD534EC21D4AA7A0021EA08 /* Day01Tests.swift in Sources */,
+				6FD534EC21D4AA7A0021EA08 /* Day01.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  Day02Tests.m
+//  Day02.m
 //  applelangTests
 //
 //  Created by Sam Krishna on 12/26/18.
@@ -9,11 +9,11 @@
 @import AOCObjC;
 #import <XCTest/XCTest.h>
 
-@interface Day02Tests : XCTestCase
+@interface Day02 : XCTestCase
 @property (nonatomic, readonly, strong) NSString *puzzleInput;
 @end
 
-@implementation Day02Tests
+@implementation Day02
 
 - (NSString *)puzzleInput
 {

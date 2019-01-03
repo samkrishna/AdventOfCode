@@ -1,5 +1,5 @@
 //
-//  Day01Tests.swift
+//  Day01.swift
 //  applelangSwiftTests
 //
 //  Created by Sam Krishna on 12/26/18.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class Day01Tests: XCTestCase {
+class Day01: XCTestCase {
 
     var numbers: [Int] {
         var _numbers = type(of: self).input.components(separatedBy: "\n").map({ Int($0) ?? 0})
@@ -17,12 +17,12 @@ class Day01Tests: XCTestCase {
     }
 
     static var input: String = {
-        let corpusPath = Bundle(for: Day01Tests.self).path(forResource: "day01", ofType: "txt")!
+        let corpusPath = Bundle(for: Day01.self).path(forResource: "day01", ofType: "txt")!
         let _corpus = try! String(contentsOfFile: corpusPath, encoding: String.Encoding.utf8)
         return _corpus
     }()
 
-    func testDay01Part1() {
+    func testDay01PartA() {
         let numberSum = numbers.reduce(0, { x, y in
             x + y
         })
@@ -30,7 +30,7 @@ class Day01Tests: XCTestCase {
         XCTAssertTrue(numberSum == 547)
     }
 
-    func testDay01Part2() {
+    func testDay01PartB() {
         var frequency = 0;
         var frequencySet: Set<Int> = Set()
         var pleaseContinue = true

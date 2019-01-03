@@ -1,5 +1,5 @@
 //
-//  Day01Tests.m
+//  Day01.m
 //  applelangTests
 //
 //  Created by Sam Krishna on 12/26/18.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface Day01Tests : XCTestCase
+@interface Day01 : XCTestCase
 @property (nonatomic, readonly, strong) NSArray<NSNumber *> *numbers;
 @end
 
-@implementation Day01Tests
+@implementation Day01
 
 - (NSArray<NSNumber *> *)numbers
 {
@@ -31,7 +31,7 @@
     return [arrayM copy];
 }
 
-- (void)testDay01Part1
+- (void)testDay01PartA
 {
     __block NSInteger sum = 0;
     [self.numbers enumerateObjectsUsingBlock:^(NSNumber * _Nonnull num, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -41,7 +41,7 @@
     XCTAssertTrue(sum == 547);
 }
 
-- (void)testDay01Part2
+- (void)testDay01PartB
 {
     __block NSInteger frequency = 0;
     __block NSNumber *freqNumber = nil;
