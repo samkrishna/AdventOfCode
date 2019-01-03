@@ -1,6 +1,6 @@
 //
 //  Day01.swift
-//  applelangSwiftTests
+//  AOCSwiftTests
 //
 //  Created by Sam Krishna on 12/26/18.
 //  Copyright © 2018 SectorMobile. All rights reserved.
