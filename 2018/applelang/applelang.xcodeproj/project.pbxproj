@@ -15,7 +15,7 @@
 		6FD534C621D490180021EA08 /* Day02Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD534C521D490180021EA08 /* Day02Tests.m */; };
 		6FD534CD21D493280021EA08 /* day01.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6FD534CB21D493280021EA08 /* day01.txt */; };
 		6FD534CE21D493280021EA08 /* day02.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6FD534CC21D493280021EA08 /* day02.txt */; };
-		6FD534DD21D4AA560021EA08 /* applelangSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD534D421D4AA560021EA08 /* applelangSwift.framework */; };
+		6FD534DD21D4AA560021EA08 /* AOCSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD534D421D4AA560021EA08 /* AOCSwift.framework */; };
 		6FD534E421D4AA560021EA08 /* applelangSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD534D621D4AA560021EA08 /* applelangSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FD534EC21D4AA7A0021EA08 /* Day01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD534EB21D4AA7A0021EA08 /* Day01Tests.swift */; };
 		6FD534ED21D4AB3F0021EA08 /* day01.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6FD534CB21D493280021EA08 /* day01.txt */; };
@@ -52,10 +52,10 @@
 		6FD534C521D490180021EA08 /* Day02Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Day02Tests.m; sourceTree = "<group>"; };
 		6FD534CB21D493280021EA08 /* day01.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = day01.txt; sourceTree = "<group>"; };
 		6FD534CC21D493280021EA08 /* day02.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = day02.txt; sourceTree = "<group>"; };
-		6FD534D421D4AA560021EA08 /* applelangSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = applelangSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FD534D421D4AA560021EA08 /* AOCSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AOCSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD534D621D4AA560021EA08 /* applelangSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = applelangSwift.h; sourceTree = "<group>"; };
 		6FD534D721D4AA560021EA08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6FD534DC21D4AA560021EA08 /* applelangSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = applelangSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FD534DC21D4AA560021EA08 /* AOCSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AOCSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD534E321D4AA560021EA08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FD534EB21D4AA7A0021EA08 /* Day01Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day01Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FD534DD21D4AA560021EA08 /* applelangSwift.framework in Frameworks */,
+				6FD534DD21D4AA560021EA08 /* AOCSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,10 +110,10 @@
 		6FD534A121D48D980021EA08 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6FD534D421D4AA560021EA08 /* applelangSwift.framework */,
-				6FD534DC21D4AA560021EA08 /* applelangSwiftTests.xctest */,
 				6FD534A021D48D980021EA08 /* AOCObjC.framework */,
 				6FD534A921D48D980021EA08 /* AOCObjCTests.xctest */,
+				6FD534D421D4AA560021EA08 /* AOCSwift.framework */,
+				6FD534DC21D4AA560021EA08 /* AOCSwiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -226,9 +226,9 @@
 			productReference = 6FD534A921D48D980021EA08 /* AOCObjCTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6FD534D321D4AA560021EA08 /* applelangSwift */ = {
+		6FD534D321D4AA560021EA08 /* AOCSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6FD534E521D4AA560021EA08 /* Build configuration list for PBXNativeTarget "applelangSwift" */;
+			buildConfigurationList = 6FD534E521D4AA560021EA08 /* Build configuration list for PBXNativeTarget "AOCSwift" */;
 			buildPhases = (
 				6FD534CF21D4AA560021EA08 /* Headers */,
 				6FD534D021D4AA560021EA08 /* Sources */,
@@ -239,14 +239,14 @@
 			);
 			dependencies = (
 			);
-			name = applelangSwift;
+			name = AOCSwift;
 			productName = applelangSwift;
-			productReference = 6FD534D421D4AA560021EA08 /* applelangSwift.framework */;
+			productReference = 6FD534D421D4AA560021EA08 /* AOCSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6FD534DB21D4AA560021EA08 /* applelangSwiftTests */ = {
+		6FD534DB21D4AA560021EA08 /* AOCSwiftTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6FD534E821D4AA560021EA08 /* Build configuration list for PBXNativeTarget "applelangSwiftTests" */;
+			buildConfigurationList = 6FD534E821D4AA560021EA08 /* Build configuration list for PBXNativeTarget "AOCSwiftTests" */;
 			buildPhases = (
 				6FD534D821D4AA560021EA08 /* Sources */,
 				6FD534D921D4AA560021EA08 /* Frameworks */,
@@ -257,9 +257,9 @@
 			dependencies = (
 				6FD534DF21D4AA560021EA08 /* PBXTargetDependency */,
 			);
-			name = applelangSwiftTests;
+			name = AOCSwiftTests;
 			productName = applelangSwiftTests;
-			productReference = 6FD534DC21D4AA560021EA08 /* applelangSwiftTests.xctest */;
+			productReference = 6FD534DC21D4AA560021EA08 /* AOCSwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -298,10 +298,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6FD534D321D4AA560021EA08 /* applelangSwift */,
-				6FD534DB21D4AA560021EA08 /* applelangSwiftTests */,
 				6FD5349F21D48D970021EA08 /* AOCObjC */,
 				6FD534A821D48D980021EA08 /* AOCObjCTests */,
+				6FD534D321D4AA560021EA08 /* AOCSwift */,
+				6FD534DB21D4AA560021EA08 /* AOCSwiftTests */,
 			);
 		};
 /* End PBXProject section */
@@ -384,7 +384,7 @@
 		};
 		6FD534DF21D4AA560021EA08 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6FD534D321D4AA560021EA08 /* applelangSwift */;
+			target = 6FD534D321D4AA560021EA08 /* AOCSwift */;
 			targetProxy = 6FD534DE21D4AA560021EA08 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -700,7 +700,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6FD534B721D48D980021EA08 /* Build configuration list for PBXNativeTarget "applelangTests" */ = {
+		6FD534B721D48D980021EA08 /* Build configuration list for PBXNativeTarget "AOCObjCTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6FD534B821D48D980021EA08 /* Debug */,
@@ -709,7 +709,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6FD534E521D4AA560021EA08 /* Build configuration list for PBXNativeTarget "applelangSwift" */ = {
+		6FD534E521D4AA560021EA08 /* Build configuration list for PBXNativeTarget "AOCSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6FD534E621D4AA560021EA08 /* Debug */,
@@ -718,7 +718,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6FD534E821D4AA560021EA08 /* Build configuration list for PBXNativeTarget "applelangSwiftTests" */ = {
+		6FD534E821D4AA560021EA08 /* Build configuration list for PBXNativeTarget "AOCSwiftTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6FD534E921D4AA560021EA08 /* Debug */,
