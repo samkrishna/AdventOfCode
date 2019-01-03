@@ -99,10 +99,10 @@
 			children = (
 				6F7D55B521D5826300E30EAD /* README.md */,
 				6FD534BE21D48EE00021EA08 /* inputs */,
-				6FD534A221D48D980021EA08 /* applelang */,
-				6FD534AD21D48D980021EA08 /* applelangTests */,
-				6FD534D521D4AA560021EA08 /* applelangSwift */,
-				6FD534E021D4AA560021EA08 /* applelangSwiftTests */,
+				6FD534A221D48D980021EA08 /* ObjCSupplement */,
+				6FD534AD21D48D980021EA08 /* ObjCSolutions */,
+				6FD534D521D4AA560021EA08 /* SwiftSupplement */,
+				6FD534E021D4AA560021EA08 /* SwiftSolutions */,
 				6FD534A121D48D980021EA08 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,7 +118,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6FD534A221D48D980021EA08 /* applelang */ = {
+		6FD534A221D48D980021EA08 /* ObjCSupplement */ = {
 			isa = PBXGroup;
 			children = (
 				6FD534BA21D48DFA0021EA08 /* RegexKitX.h */,
@@ -126,17 +126,17 @@
 				6FD534A321D48D980021EA08 /* applelang.h */,
 				6FD534A421D48D980021EA08 /* Info.plist */,
 			);
-			path = applelang;
+			path = ObjCSupplement;
 			sourceTree = "<group>";
 		};
-		6FD534AD21D48D980021EA08 /* applelangTests */ = {
+		6FD534AD21D48D980021EA08 /* ObjCSolutions */ = {
 			isa = PBXGroup;
 			children = (
 				6FD534C321D48F3A0021EA08 /* Day01Tests.m */,
 				6FD534C521D490180021EA08 /* Day02Tests.m */,
 				6FD534B021D48D980021EA08 /* Info.plist */,
 			);
-			path = applelangTests;
+			path = ObjCSolutions;
 			sourceTree = "<group>";
 		};
 		6FD534BE21D48EE00021EA08 /* inputs */ = {
@@ -149,22 +149,22 @@
 			path = ../inputs;
 			sourceTree = SOURCE_ROOT;
 		};
-		6FD534D521D4AA560021EA08 /* applelangSwift */ = {
+		6FD534D521D4AA560021EA08 /* SwiftSupplement */ = {
 			isa = PBXGroup;
 			children = (
 				6FD534D621D4AA560021EA08 /* applelangSwift.h */,
 				6FD534D721D4AA560021EA08 /* Info.plist */,
 			);
-			path = applelangSwift;
+			path = SwiftSupplement;
 			sourceTree = "<group>";
 		};
-		6FD534E021D4AA560021EA08 /* applelangSwiftTests */ = {
+		6FD534E021D4AA560021EA08 /* SwiftSolutions */ = {
 			isa = PBXGroup;
 			children = (
 				6FD534EB21D4AA7A0021EA08 /* Day01Tests.swift */,
 				6FD534E321D4AA560021EA08 /* Info.plist */,
 			);
-			path = applelangSwiftTests;
+			path = SwiftSolutions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -518,7 +518,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = applelang/Info.plist;
+				INFOPLIST_FILE = ObjCSupplement/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -542,7 +542,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = applelang/Info.plist;
+				INFOPLIST_FILE = ObjCSupplement/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -560,7 +560,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = applelangTests/Info.plist;
+				INFOPLIST_FILE = ObjCSolutions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -576,7 +576,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = applelangTests/Info.plist;
+				INFOPLIST_FILE = ObjCSolutions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -598,7 +598,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = applelangSwift/Info.plist;
+				INFOPLIST_FILE = SwiftSupplement/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -625,7 +625,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = applelangSwift/Info.plist;
+				INFOPLIST_FILE = SwiftSupplement/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -646,7 +646,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = applelangSwiftTests/Info.plist;
+				INFOPLIST_FILE = SwiftSolutions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -665,7 +665,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = applelangSwiftTests/Info.plist;
+				INFOPLIST_FILE = SwiftSolutions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",

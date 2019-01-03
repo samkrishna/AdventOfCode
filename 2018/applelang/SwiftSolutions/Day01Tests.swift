@@ -27,4 +27,6 @@ class Day01Tests: XCTestCase {
 
         XCTAssertTrue(numberSum == 547)
     }
+
+    
 }
