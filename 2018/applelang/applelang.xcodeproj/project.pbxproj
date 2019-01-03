@@ -16,7 +16,7 @@
 		6FD534CD21D493280021EA08 /* day01.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6FD534CB21D493280021EA08 /* day01.txt */; };
 		6FD534CE21D493280021EA08 /* day02.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6FD534CC21D493280021EA08 /* day02.txt */; };
 		6FD534DD21D4AA560021EA08 /* AOCSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD534D421D4AA560021EA08 /* AOCSwift.framework */; };
-		6FD534E421D4AA560021EA08 /* applelangSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD534D621D4AA560021EA08 /* applelangSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FD534E421D4AA560021EA08 /* AOCSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD534D621D4AA560021EA08 /* AOCSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FD534EC21D4AA7A0021EA08 /* Day01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD534EB21D4AA7A0021EA08 /* Day01Tests.swift */; };
 		6FD534ED21D4AB3F0021EA08 /* day01.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6FD534CB21D493280021EA08 /* day01.txt */; };
 		6FD534EE21D4AB430021EA08 /* day02.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6FD534CC21D493280021EA08 /* day02.txt */; };
@@ -53,7 +53,7 @@
 		6FD534CB21D493280021EA08 /* day01.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = day01.txt; sourceTree = "<group>"; };
 		6FD534CC21D493280021EA08 /* day02.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = day02.txt; sourceTree = "<group>"; };
 		6FD534D421D4AA560021EA08 /* AOCSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AOCSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6FD534D621D4AA560021EA08 /* applelangSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = applelangSwift.h; sourceTree = "<group>"; };
+		6FD534D621D4AA560021EA08 /* AOCSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOCSwift.h; sourceTree = "<group>"; };
 		6FD534D721D4AA560021EA08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FD534DC21D4AA560021EA08 /* AOCSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AOCSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD534E321D4AA560021EA08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -152,7 +152,7 @@
 		6FD534D521D4AA560021EA08 /* SwiftSupplement */ = {
 			isa = PBXGroup;
 			children = (
-				6FD534D621D4AA560021EA08 /* applelangSwift.h */,
+				6FD534D621D4AA560021EA08 /* AOCSwift.h */,
 				6FD534D721D4AA560021EA08 /* Info.plist */,
 			);
 			path = SwiftSupplement;
@@ -183,7 +183,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FD534E421D4AA560021EA08 /* applelangSwift.h in Headers */,
+				6FD534E421D4AA560021EA08 /* AOCSwift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
