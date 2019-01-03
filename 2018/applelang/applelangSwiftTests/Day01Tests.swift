@@ -10,8 +10,8 @@ import XCTest
 
 class Day01Tests: XCTestCase {
 
-    var testCorpus: String {
-        return type(of: self).input
+    var numbers: [Int] {
+        return type(of: self).input.components(separatedBy: "\n").map({ Int($0) ?? 0})
     }
 
     static var input: String = {
@@ -21,11 +21,10 @@ class Day01Tests: XCTestCase {
     }()
 
     func testDay01Part1() {
-        var sum: Int = 0
-        testCorpus.enumerateLines { (line, stop) in
-            sum += Int(line) ?? 0
-        }
+        let numberSum = numbers.reduce(0, { x, y in
+            x + y
+        })
 
-        XCTAssertTrue(sum == 547)
+        XCTAssertTrue(numberSum == 547)
     }
 }
