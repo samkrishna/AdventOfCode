@@ -52,6 +52,10 @@ more-itertools = "*"
 ivisual-alt = "*"
 plotly = "*"
 simplegeneric = "*"
+pyyaml = ">=4.2b4"
 
 [requires]
 python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true
